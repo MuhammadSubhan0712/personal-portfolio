@@ -48,7 +48,7 @@ const Navbar = () => {
         <ul>
           <li>
             <div
-              className={cn("rounded p-1 ", {
+              className={cn("rounded p-1  hover:cursor-pointer", {
                 "bg-primary text-white": activeSection === "home",
               })}
               onClick={() => {
@@ -62,7 +62,7 @@ const Navbar = () => {
 
           <li>
             <div
-              className={cn("rounded p-1 ", {
+              className={cn("rounded p-1  hover:cursor-pointer", {
                 "bg-primary text-white": activeSection === "skills",
               })}
               onClick={() => {
@@ -90,7 +90,7 @@ const Navbar = () => {
 
           <li>
             <div
-              className={cn("rounded p-1 ", {
+              className={cn("rounded p-1  hover:cursor-pointer", {
                 "bg-primary text-white": activeSection === "testimonials",
               })}
               onClick={() => {
@@ -104,7 +104,7 @@ const Navbar = () => {
 
           <li>
             <div
-              className={cn("rounded p-1 ", {
+              className={cn("rounded p-1 hover:cursor-pointer", {
                 "bg-primary text-white": activeSection === "experience",
               })}
               onClick={() => {
@@ -118,7 +118,7 @@ const Navbar = () => {
 
           <li>
             <div
-              className={cn("rounded p-1 ", {
+              className={cn("rounded p-1  hover:cursor-pointer", {
                 "bg-primary text-white": activeSection === "contact",
               })}
               onClick={() => {
