@@ -38,15 +38,18 @@ const Navbar = () => {
       </button>
 
       <nav
-        className={cn("bg-background card-shadow p-3 rounded md:block duration-300 ease-in-out", {
-          "opacity-100": isOpen,
-          "opacity-0": isOpen,
-        })}>
+        className={cn(
+          "bg-background card-shadow p-3 rounded md:block duration-300 ease-in-out",
+          {
+            "opacity-100": isOpen,
+            "opacity-0": !isOpen,
+          }
+        )}>
         <ul>
           <li>
             <div
               className={cn("rounded p-1 ", {
-                "bg-primary text-white": true,
+                "bg-primary text-white": activeSection === "home",
               })}
               onClick={() => {
                 setActiveSection("home");
@@ -54,6 +57,76 @@ const Navbar = () => {
                 setIsOpen(false);
               }}>
               Home
+            </div>
+          </li>
+
+          <li>
+            <div
+              className={cn("rounded p-1 ", {
+                "bg-primary text-white": activeSection === "skills",
+              })}
+              onClick={() => {
+                setActiveSection("skills");
+                scrollToSection("skills");
+                setIsOpen(false);
+              }}>
+              Skills
+            </div>
+          </li>
+
+          <li>
+            <div
+              className={cn("rounded p-1 ", {
+                "bg-primary text-white": activeSection === "projects",
+              })}
+              onClick={() => {
+                setActiveSection("projects");
+                scrollToSection("projects");
+                setIsOpen(false);
+              }}>
+              Projects
+            </div>
+          </li>
+
+          <li>
+            <div
+              className={cn("rounded p-1 ", {
+                "bg-primary text-white": activeSection === "testimonials",
+              })}
+              onClick={() => {
+                setActiveSection("testimonials");
+                scrollToSection("testimonials");
+                setIsOpen(false);
+              }}>
+              Testimonials
+            </div>
+          </li>
+
+          <li>
+            <div
+              className={cn("rounded p-1 ", {
+                "bg-primary text-white": activeSection === "experience",
+              })}
+              onClick={() => {
+                setActiveSection("experience");
+                scrollToSection("experience");
+                setIsOpen(false);
+              }}>
+              Experience
+            </div>
+          </li>
+
+          <li>
+            <div
+              className={cn("rounded p-1 ", {
+                "bg-primary text-white": activeSection === "contact",
+              })}
+              onClick={() => {
+                setActiveSection("contact");
+                scrollToSection("contact");
+                setIsOpen(false);
+              }}>
+              Contact Me
             </div>
           </li>
         </ul>
