@@ -65,7 +65,7 @@ const Navbar = () => {
 
           <li>
             <div
-              className={cn("rounded p-1 duration-300 ease-in-out  hover:cursor-pointer", {
+              className={cn("rounded p-1 duration-300 ease-in-out hover:cursor-pointer", {
                 "bg-primary text-white": activeSection === "skills",
               })}
               onClick={() => {
@@ -79,7 +79,7 @@ const Navbar = () => {
 
           <li>
             <div
-              className={cn("rounded p-1 duration-300 ease-in-out ", {
+              className={cn("rounded p-1 duration-300 ease-in-out hover:cursor-pointer", {
                 "bg-primary text-white": activeSection === "projects",
               })}
               onClick={() => {
@@ -121,7 +121,7 @@ const Navbar = () => {
 
           <li>
             <div
-              className={cn("rounded p-1 whitespace-nowrap duration-300 ease hover:cursor-pointer", {
+              className={cn("rounded p-1 whitespace-nowrap duration-300 ease-in-out hover:cursor-pointer", {
                 "bg-primary text-white": activeSection === "contact",
               })}
               onClick={() => {
