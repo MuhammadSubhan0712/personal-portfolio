@@ -27,3 +27,9 @@ body {
     @apply shadow-[0px_3px_10px_rbga(0,0,0,0.2)];
   }
 }
+
+.circle-icon{
+  @apply flex items-center justify-center
+  rounded-full w-11 h-11 md:w-14 md:h-14 
+  bg-[#f4ebff] bg-opacity-[12%] absolute; 
+}
