@@ -33,6 +33,22 @@ const Hero = () => {
           height={430}
           className="hidden md:block w-[372px] h-[430px] absolute right-0 -z-10"
         />
+
+        <Image
+          src={"/profile_dark_purple.png"}
+          alt="Dark purple rectangle "
+          width={372}
+          height={430}
+          className="hidden md:block w-[372px] h-[430px] absolute right-0 -z-10"
+        />
+
+        <Image
+          src={"/profile_picture.png"}
+          alt="My profile picture"
+          width={357}
+          height={417}
+          className="hidden md:block min-w-[357px] h-[417px] z-10 mr-[7.7px] my-[6.5px]"
+        />
       </div>
     </section>
   );
