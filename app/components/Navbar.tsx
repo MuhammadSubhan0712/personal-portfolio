@@ -29,12 +29,12 @@ const Navbar = () => {
         className="bg-background card-shadow p-3 md:hidden rounded">
         <img
           className="block dark:hidden"
-          src="/public/next.svg"
+          src="next.svg"
           alt="menu icon"
         />
         <img
           className="block dark:block"
-          src="/public/next.svg"
+          src="next.svg"
           alt="menu icon"
         />
       </button>
