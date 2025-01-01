@@ -10,6 +10,11 @@ const Hero = () => {
         <span className='block text-[27px] hightlight mt-2'>
          Tech Enthusiast </span>
         </h1>
+        <p className='text-center text-sm mx-6'>
+        I'm obsessed with code and helping startups create unique and helpful products.
+        </p>
+
+        <a className='self-center bg-primary text-white p-2.5 rounded flex gap-2.5 items-center text-sm' href="mailto:muhammadsubhan0712@gmail.com">Let's Connect <img src="/arrow_right_icon.svg" alt="Arrow right icon"/></a>
      </div>
     </section>
   )
