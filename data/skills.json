@@ -1,0 +1,34 @@
+[
+  {
+    "name": "HTML",
+    "icon": "/html_icon.png"
+  },
+  {
+    "name": "CSS",
+    "icon": "/css_icon.png"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "/javascript_icon.png"
+  },
+  {
+    "name": "C++",
+    "icon": "/c++_icon.png"
+  },
+  {
+    "name": "C#",
+    "icon": "/c#_icon.png"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "/typescript_icon.png"
+  },
+  {
+    "name": "ReactJs",
+    "icon": "/reactjs_icon.png"
+  },
+  {
+    "name": "NextJs",
+    "icon": "/nextjs_icon.png"
+  }
+]
