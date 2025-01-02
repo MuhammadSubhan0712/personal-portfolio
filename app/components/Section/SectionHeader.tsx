@@ -12,3 +12,5 @@ const SectionHeader = ({plainText , highlightText}: Props) => {
     </h2>
   )
 }
+
+export default SectionHeader
