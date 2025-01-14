@@ -44,11 +44,23 @@ const Project = ({
               alt="link arrow"
               className="block dark:hidden"
             />
+            <img
+              src="link_arrow_dark.svg"
+              alt="link arrow"
+              className="hidden dark:block"
+            />
           </a>
+        </div>
+
+        <p className="line-clamp-2 text-sm md:text-base">{description}</p>
+        <div className="flex flex-row gap-[11px]">
+          {languageIcons.map((icon, iconId) => (
+            <img src={icon} alt="Language icon" key={iconId} />
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Projectrafce;
+export default Project;
