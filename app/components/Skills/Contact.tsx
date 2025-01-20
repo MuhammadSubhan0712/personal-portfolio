@@ -36,10 +36,18 @@ const Contact = () => {
                 width={17}
                 className="hidden dark:block"
               />
+              <Image
+                src="/github_logo.svg"
+                alt="Github icon"
+                height={16}
+                width={17}
+                className="dark:hidden"
+              />
             </a>
           </div>
         </div>
       </div>
+      <small>Copyright &copy; Mu.Subhan Khannn 2025</small>
     </section>
   );
 };
