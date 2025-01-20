@@ -12,9 +12,8 @@ const Skills = () => {
         <SectionHeader plainText="This is my" highlightText="Tech Stack" />
         <div className="card w-full px-[33px] py-[27px] flex flex-wrap flex-col md:flex-row justify-center items-center gap-[19px] md:gap-[33px]"></div>
       </div>
-      {skills.map((skill, id) => {
-        <Skill key={id} name={skill.name} icon={skill.icon} />;
-      })}
+    {skills.map((skill, id) => (<Skill key={id} name={skill.name} icon={skill.icon} />
+      ))}
       <Image
         src="/tech_stack_grid_dark.svg"
         alt="Background grid decoration"
