@@ -12,9 +12,9 @@ const Contact = () => {
         className="flex flex-col 
     :md:flex-row gap-5 md:justify-between md:w-full">
         <h2 className="font-semibold text-[22px] md:text-[40px] md:max-w-[462px]">
-          Want to me on your team❔ Let&8217;s make it happen🎬💫
+          Want to me on your team❔ Let&#8217;s make it happen🎬💫
         </h2>
-        <div
+        <div  
           className="flex flex-col gap-5
     items-center md:items-end">
           <a
@@ -22,7 +22,7 @@ const Contact = () => {
             className="self-center md:self-start bg-primary
     text-white p-2.5 rounded flex gap-2.5 items-center text-lg
     md:text-xl/1 font-normal">
-            Let&8217;s get in touch 🤝
+            Let&#8217;s get in touch 🤝
             <img src="/mail/_icon.svg" alt="Mail icon" />
           </a>
           <div className="flex flex-row gap-1">
@@ -62,7 +62,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <small>Copyright &copy; Mu.Subhan Khannn 2025</small>
+      <small>Copyright &copy; M.Subhan Khan 2025</small>
     </section>
   );
 };

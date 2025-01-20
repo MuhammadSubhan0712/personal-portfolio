@@ -47,7 +47,7 @@ body {
   }
 
   .contact-button {
-    @apply p-1.5 roundd-md card-shadow flex
+    @apply p-1.5 rounded-md card-shadow flex
 items-center justify-center w-8 h-8;
   }
 }
