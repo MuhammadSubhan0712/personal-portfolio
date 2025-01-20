@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Contact = () => {
@@ -20,7 +21,23 @@ const Contact = () => {
             href="mailto:muhammadsubhan0712@gmail.com"
             className="self-center md:self-start bg-primary
     text-white p-2.5 rounded flex gap-2.5 items-center text-lg
-    md:text-xl/1 font-normal"></a>
+    md:text-xl/1 font-normal">
+            Let's get in touch 🤝
+            <img src="/mail/_icon.svg" alt="Mail icon" />
+          </a>
+          <div className="flex flex-row gap-1">
+            <a
+              href="https://www.github.com/MuhammadSubhann0712"
+              className="contact-button">
+              <Image
+                src="/github_logo_dark.svg"
+                alt="Github icon"
+                height={16}
+                width={17}
+                className="hidden dark:block"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
