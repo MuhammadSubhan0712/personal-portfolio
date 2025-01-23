@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import Reveal from "../Reveal";
 type Props = {
   icon: string;
   name: string;
@@ -30,22 +31,24 @@ const Skill = ({ icon, name }: Props) => {
   }, []);
 
   return (
-    <div
-      className="relative
+    <Reveal duration={1.5}>
+      <div
+        className="relative
     flex gap-2 p-2 
     border-primary border 
     rounded-lg h-[46px]">
-      <motion.div
-        className="absolute
+        <motion.div
+          className="absolute
       inset-0 border-2 border-purple-500
       dark:border-purple-300 rounded-lg"
-        style={{
-          maskImage: mask,
-          WebkitMaskImage: mask,
-        }}></motion.div>
-      <img src={icon} alt={`${name} icon`} />
-      <p className="text-lg">{name}</p>
-    </div>
+          style={{
+            maskImage: mask,
+            WebkitMaskImage: mask,
+          }}></motion.div>
+        <img src={icon} alt={`${name} icon`} />
+        <p className="text-lg">{name}</p>
+      </div>
+    </Reveal>
   );
 };
 export default Skill;
