@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { motion, useMotionValue } from "framer-motion";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 type Props = {
   icon: string;
   name: string;
@@ -11,12 +11,15 @@ const Skill = ({ icon, name }: Props) => {
 
   const xDistance = useMotionValue(0);
   const yDistance = useMotionValue(0);
+  const mask = useMotionTemplate`radial-gradient(100px 100px at ${xDistance}
+  px ${yDistance}px, #000, transparent)`;
 
   const handleMouseMove = (event: MouseEvent) => {
     if (!ref.current) return;
     const clientReact = ref.current.getBoundingClientRect();
 
     xDistance.set(event.x - clientReact.x);
+    yDistance.set(event.y - clientReact.y);
   };
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
@@ -35,7 +38,11 @@ const Skill = ({ icon, name }: Props) => {
       <motion.div
         className="absolute
       inset-0 border-2 border-purple-500
-      dark:border-purple-300 rounded-lg"></motion.div>
+      dark:border-purple-300 rounded-lg"
+        style={{
+          maskImage: mask,
+          WebkitMaskImage: mask,
+        }}></motion.div>
       <img src={icon} alt={`${name} icon`} />
       <p className="text-lg">{name}</p>
     </div>
