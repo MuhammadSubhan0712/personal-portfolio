@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+
+
 type Props = React.PropsWithChildren<{
   initialX?: number;
   initialY?: number;
@@ -37,3 +39,5 @@ const Reveal = ({
     </motion.span>
   );
 };
+
+export default Reveal;
