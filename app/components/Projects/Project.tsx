@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import Reveal from "../Reveal";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 type Props = {
   thumbnail: string;
   title: string;
@@ -21,9 +21,38 @@ const Project = ({
   description,
   languageIcons,
 }: Props) => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const xSpring = useSpring(x);
+  const ySpring = useSpring(y);
+
+  const xRotation = useTransform(ySpring, [-0.5, 0.5], ["15deg", "-15deg"]);
+  const yRotation = useTransform(xSpring, [-0.5, 0.5], ["15deg", "-15deg"]);
+  const handleMouseMove: MouseEventHandler<HTMLDivElement> = (event) => {
+    if (!event.currentTarget) return;
+
+    const target = event.currentTarget as HTMLDivElement;
+
+    const clientReact = target.getBoundingClientRect();
+
+    const xPos = (event.clientX - clientReact.left) / clientReact.width - 0.5;
+    const yPos = (event.clientY - clientReact.left) / clientReact.height - 0.5;
+
+    x.set(xPos);
+    y.set(yPos);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
   return (
     <Reveal initialX={-50} delay={0.5}>
-      <div
+      <motion.div
+        onMouseMove={handleMouseMove}
+        onMouseOut={handleMouseLeave}
         className="card flex flex-col items-stretch w-full max-w-[428.4px] p-5
     md:p-[18px] gap-[30px]">
         <Image
@@ -62,7 +91,7 @@ const Project = ({
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </Reveal>
   );
 };
