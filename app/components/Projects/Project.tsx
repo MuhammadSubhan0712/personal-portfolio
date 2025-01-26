@@ -28,7 +28,7 @@ const Project = ({
   const ySpring = useSpring(y);
 
   const xRotation = useTransform(ySpring, [-0.5, 0.5], ["15deg", "-15deg"]);
-  const yRotation = useTransform(xSpring, [-0.5, 0.5], ["15deg", "-15deg"]);
+  const yRotation = useTransform(xSpring, [-0.5, 0.5], ["-15deg", "15deg"]);
   const handleMouseMove: MouseEventHandler<HTMLDivElement> = (event) => {
     if (!event.currentTarget) return;
 
@@ -54,13 +54,21 @@ const Project = ({
         onMouseMove={handleMouseMove}
         onMouseOut={handleMouseLeave}
         className="card flex flex-col items-stretch w-full max-w-[428.4px] p-5
-    md:p-[18px] gap-[30px]">
+    md:p-[18px] gap-[30px]"
+        style={{
+          transformStyle: "preserve-3d",
+          rotateX: xRotation,
+          rotateY: yRotation,
+        }}>
         <Image
           src={thumbnail}
           alt={`Thumbnail for ${title}`}
           width={392}
           height={230}
           className="w-full h-[230px] object-cover"
+          style={{
+            transform: "translateZ(100px)",
+          }}
         />
 
         <div className="flex flex-col gap-[11px]">
