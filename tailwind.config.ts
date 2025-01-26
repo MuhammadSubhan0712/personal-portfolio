@@ -9,6 +9,10 @@ export default {
   darkMode: "class" ,
   theme: {
     extend: {
+      backgroundColor:{
+      "gradient-radial":
+      "radial-gradient(var(--tw-gradient-stops))",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

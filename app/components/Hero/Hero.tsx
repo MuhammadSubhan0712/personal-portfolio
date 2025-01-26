@@ -8,7 +8,7 @@ const Hero = () => {
         <Reveal initialX={-25}>
           <h1 className="text-2xl/1 text-center font-semibold block md:text-[40px] md:text-start md:inline">
             <span className="-ml-3 "></span>
-            Hello I'm Muhammad Subhan Khan, I'm
+            Hello I'm Muhammad Subhan Khan, I&#8217;m
             <span className="block text-[27px] hightlight mt-2 md:text-[45px] md:inline md:mt-0">
               {" "}
               Tech Enthusiast{" "}
@@ -18,7 +18,7 @@ const Hero = () => {
 
         <Reveal initialX={-30} delay={0.2}>
           <p className="text-center text-sm mx-6 md:text-[22px] md:text-start md:mx-0">
-            I'm obsessed with code and can help for startups creating unique and
+            I&#8217;m obsessed with code and can help for startups creating unique and
             helpful products.
           </p>
         </Reveal>
@@ -27,7 +27,7 @@ const Hero = () => {
           <a
             className="self-center bg-primary text-white p-2.5 rounded flex gap-2.5 items-center text-sm md:self-start md:text-xl/6"
             href="mailto:muhammadsubhan0712@gmail.com">
-            Let's Connect{" "}
+            Let&#8217;s Connect{" "}
             <img src="/arrow_right_icon.svg" alt="Arrow right icon" />
           </a>
         </Reveal>
