@@ -96,7 +96,7 @@ const Navbar = () => {
               </div>
             </li>
 
-            <li>
+            {/* <li>
               <div
                 className={cn(
                   "rounded p-1 duration-300 ease-in-out  hover:cursor-pointer",
@@ -111,9 +111,9 @@ const Navbar = () => {
                 }}>
                 Testimonials
               </div>
-            </li>
+            </li> */}
 
-            <li>
+            {/* <li>
               <div
                 className={cn(
                   "rounded p-1 duration-300 ease-in-out hover:cursor-pointer",
@@ -128,7 +128,7 @@ const Navbar = () => {
                 }}>
                 Experience
               </div>
-            </li>
+            </li> */}
 
             <li>
               <div
