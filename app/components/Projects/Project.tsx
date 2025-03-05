@@ -53,7 +53,7 @@ const Project = ({
       <motion.div
         onMouseMove={handleMouseMove}
         onMouseOut={handleMouseLeave}
-        className="card flex flex-col items-stretch w-full max-w-[428.4px] p-5
+        className="card flex flex-col justify-center items-stretch w-full max-w-[428.4px] p-5
     md:p-[18px] gap-[30px]"
         style={{
           transformStyle: "preserve-3d",

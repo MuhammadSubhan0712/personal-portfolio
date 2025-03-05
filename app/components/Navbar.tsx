@@ -23,14 +23,14 @@ const Navbar = () => {
 
   return (
     <div
-      className="fixed top-12 right-6 mx-auto flex 
-    flex-col gap-2.5 items-end z-50 md:right-auto 
-    md:left-1/2 md:translate-x-1/2">
+      className="fixed top-12 right-1 left-9 mx-auto flex 
+    flex-col gap-2.5 items-center z-50 md:right-auto 
+    md:left-1/2 md:translate-x-1/2 ">
       <button
         onClick={() => setIsOpen((preVal) => !preVal)}
         className="bg-background card-shadow p-3 md:hidden rounded">
-        <img className="block dark:hidden" src="next.svg" alt="menu icon" />
-        <img className="block dark:block" src="next.svg" alt="menu icon" />
+        <img className="block dark:hidden" src="/menu_icon_light.svg" alt="menu icon" />
+        <img className="hidden dark:block" src="/menu_icon_dark.svg" alt="menu icon" />
       </button>
 
       <Reveal initialY={-20} duration={0.5}>
@@ -43,8 +43,8 @@ const Navbar = () => {
             }
           )}>
           <ul
-            className="flex flex-col items-center gap-4 
-        text-lg font-normal md:flex-row">
+            className="flex justify-center flex-col items-center gap-4 
+        text-lg font-normal md:flex-row md:justify-center">
             <li>
               <div
                 className={cn(
@@ -55,7 +55,7 @@ const Navbar = () => {
                 )}
                 onClick={() => {
                   setActiveSection("home");
-                  scrollToSection("home");
+                   scrollToSection("home");
                   setIsOpen(false);
                 }}>
                 Home

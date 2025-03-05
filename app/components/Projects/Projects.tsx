@@ -34,7 +34,7 @@ const Projects = () => {
 
 <Image
         src="/projects_highlight_mobile.svg"
-        alt="MobileBackground Highlight decoration"
+        alt="Mobile Background Highlight decoration"
         width={321}
         height={530}
         className="absolute md:hidden left-1/2 top-1/2

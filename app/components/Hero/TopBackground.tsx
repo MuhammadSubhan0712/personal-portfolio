@@ -12,7 +12,7 @@ const TopBackground = () => {
           
           <div className="circle-icon top-0 left-[171px] md:top-28 md:left-72">
             <Image
-              src="/public/rocket_icon.svg"
+              src="/rocket_icon.svg"
               alt="Rocket icon"
               width={23}
               height={23}
@@ -22,7 +22,7 @@ const TopBackground = () => {
 
           <div className="circle-icon top-[162px] -left-5  md:top-64 md:left-0">
             <Image
-              src="/public/bracket_icon.svg"
+              src="/bracket_icon.svg"
               alt="Bracket icon"
               width={23}
               height={23}
@@ -32,7 +32,7 @@ const TopBackground = () => {
 
           <div className="circle-icon top-60 left-[149] md:top-[570px] md:left-44">
             <Image
-              src="/public/github_icon.svg"
+              src="/github_icon.svg"
               alt="Github icon"
               width={23}
               height={23}
@@ -42,7 +42,7 @@ const TopBackground = () => {
 
           <div className="hidden md:circle-icon md:top-[592px] md:left-[608px]">
             <Image
-              src="/public/electricity_icon.svg"
+              src="/electricity_icon.svg"
               alt="Electricity icon"
               width={23}                                                                        
               height={23}
@@ -52,7 +52,7 @@ const TopBackground = () => {
           
           <div className="hidden md:circle-icon md:top-[158px] md:left-[606px]">
             <Image
-              src="/public/merge_icon.svg"
+              src="/merge_icon.svg"
               alt="Merge icon"
               width={23}                                                                        
               height={23}
@@ -61,7 +61,7 @@ const TopBackground = () => {
           
           <div className="hidden md:circle-icon md:top-[368px] md:left-[965px]">
             <Image
-              src="/public/stack_icon.svg"
+              src="/stack.svg"
               alt="Stack icon"
               width={23}                                                                        
               height={23}
@@ -71,10 +71,10 @@ const TopBackground = () => {
         </div>
       </div>
 
-      <img src="/public/top_highlight.svg" alt="Top dark mode background highlight" width={809} height={877} className="absolute top-[-515px] hidden dark:md:block left-1/2 -translate-x-1/2" />
+      <img src="/top_highlight.svg" alt="Top dark mode background highlight" width={809} height={877} className="absolute top-[-515px] hidden dark:md:block left-1/2 -translate-x-1/2" />
 
       {/* For Mobile view */}
-      <img src="/public/top_highlight_mobile.svg" alt="Top dark mode background highlight for mobile" width={429} height={465} className="absolute top-[-229px] hidden dark:block dark:md:hidden left-1/2 -translate-x-1/2"/>
+      <img src="/top_highlight_mobile.svg" alt="Top dark mode background highlight for mobile" width={429} height={465} className="absolute top-[-229px] hidden dark:block dark:md:hidden left-1/2 -translate-x-1/2"/>
 
       <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_light.svg')] bg-[auto_auto] hidden dark:hidden md:block"/>
       

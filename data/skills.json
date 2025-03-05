@@ -9,7 +9,7 @@
   },
   {
     "name": "JavaScript",
-    "icon": "/javascript_icon.png"
+    "icon": "/js_icon.png"
   },
   {
     "name": "C++",
@@ -17,7 +17,7 @@
   },
   {
     "name": "C#",
-    "icon": "/c#_icon.png"
+    "icon": "/csharp_icon.png"
   },
   {
     "name": "TypeScript",
@@ -25,10 +25,34 @@
   },
   {
     "name": "ReactJs",
-    "icon": "/reactjs_icon.png"
+    "icon": "/react_icon.png"
   },
   {
     "name": "NextJs",
-    "icon": "/nextjs_icon.png"
+    "icon": "/next_icon.png"
+  },
+  {
+     "name": "Firebase",
+     "icon" : "/firebase_icon.png"
+  },
+  {
+    "name": "ExpressJs",
+    "icon": "/expressjs_icon.png"
+  },
+  {
+    "name": "MongoDB(Atlas)",
+    "icon": "/mongodb_icon.png"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "/postgres_icon.png"
+  },
+  {
+    "name": "MySQL",
+    "icon": "/mysql_icon.png"
+  },
+  {
+    "name": "Oracle Database",
+    "icon": "/oracle_icon.png"
   }
 ]

@@ -27,7 +27,7 @@ const Skill = ({ icon, name }: Props) => {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-    };
+    }
   }, []);
 
   return (

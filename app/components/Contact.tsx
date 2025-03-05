@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import Reveal from "./Reveal";
@@ -37,7 +38,7 @@ const updatePos = (event:MouseEvent) => {
         className="flex flex-col 
     :md:flex-row gap-5 md:justify-between md:w-full">
         <h2 className="font-semibold text-[22px] md:text-[40px] md:max-w-[462px]">
-          Want to me on your team❔ Let&#8217;s make it happen🎬💫
+          Want to me on your team❔ Let&#8217;s make it happen💫
         </h2>
         <div  
           className="flex flex-col gap-5
@@ -48,39 +49,39 @@ const updatePos = (event:MouseEvent) => {
     text-white p-2.5 rounded flex gap-2.5 items-center text-lg
     md:text-xl/1 font-normal">
             Let&#8217;s get in touch 🤝
-            <img src="/mail/_icon.svg" alt="Mail icon" />
+            <img src="/mail_icon.svg" alt="Mail icon" />
           </a>
           <div className="flex flex-row gap-1">
             <a href="https://www.github.com" className="contact-button">
               <Image
                 src="/github_logo_dark.svg"
                 alt="Github icon"
-                height={16}
-                width={17}
+                height={36}
+                width={37}
                 className="hidden dark:block"
               />
               <Image
-                src="/github_logo.svg"
+                src="/github_icon.svg"
                 alt="Github icon"
-                height={16}
-                width={17}
+                height={36}
+                width={37}
                 className="dark:hidden"
               />
             </a>
 
             <a href="https://www.linkedin.com" className="contact-button">
               <Image
-                src="/linkedin_logo_dark.svg"
+                src="/linkedin_icon.svg"
                 alt="Linkedin icon"
-                height={14}
-                width={17}
+                height={24}
+                width={37}
                 className="hidden dark:block"
               />
               <Image
-                src="/linkedin_logo.svg"
+                src="/linkedin_icon.svg"
                 alt="Linkedin icon"
-                height={14}
-                width={17}
+                height={24}
+                width={37}
                 className="dark:hidden"
               />
             </a>
