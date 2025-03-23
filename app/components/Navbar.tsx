@@ -19,6 +19,9 @@ const Navbar = () => {
         behavior: "smooth",
       });
     }
+    else {
+      console.warn(`Section with id "${sectionId}" not found.`);
+    }
   }, []);
 
   return (
@@ -29,8 +32,8 @@ const Navbar = () => {
       <button
         onClick={() => setIsOpen((preVal) => !preVal)}
         className="bg-background card-shadow p-3 md:hidden rounded">
-        <img className="block dark:hidden" src="/menu_icon_light.svg" alt="menu icon" />
-        <img className="hidden dark:block" src="/menu_icon_dark.svg" alt="menu icon" />
+        <img className="block dark:hidden" src="/menu_icon_light.svg" alt="Light mode menu icon" />
+        <img className="hidden dark:block" src="/menu_icon_dark.svg" alt="Dark mode menu icon" />
       </button>
 
       <Reveal initialY={-20} duration={0.5}>
@@ -95,40 +98,6 @@ const Navbar = () => {
                 Projects
               </div>
             </li>
-
-            {/* <li>
-              <div
-                className={cn(
-                  "rounded p-1 duration-300 ease-in-out  hover:cursor-pointer",
-                  {
-                    "bg-primary text-white": activeSection === "testimonials",
-                  }
-                )}
-                onClick={() => {
-                  setActiveSection("testimonials");
-                  scrollToSection("testimonials");
-                  setIsOpen(false);
-                }}>
-                Testimonials
-              </div>
-            </li> */}
-
-            {/* <li>
-              <div
-                className={cn(
-                  "rounded p-1 duration-300 ease-in-out hover:cursor-pointer",
-                  {
-                    "bg-primary text-white": activeSection === "experience",
-                  }
-                )}
-                onClick={() => {
-                  setActiveSection("experience");
-                  scrollToSection("experience");
-                  setIsOpen(false);
-                }}>
-                Experience
-              </div>
-            </li> */}
 
             <li>
               <div

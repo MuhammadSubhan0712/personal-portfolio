@@ -7,7 +7,7 @@ import ThemeToggle from "./components/ThemeToggle";
 export default function Home() {
   return (
     <div className="relative overflow-clip" id="home">
-      {/* <div className="h-screen w-screen"></div> */}
+      {/* <div className="h-screen w-screen"> */}
       <Navbar />
       <TopBackground />
       <Sections />
@@ -31,5 +31,6 @@ export default function Home() {
      min-h-[936px] -z-50 hidden md:block"
       />
     </div>
+    // </div>
   );
 }

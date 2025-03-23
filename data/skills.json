@@ -12,14 +12,6 @@
     "icon": "/js_icon.png"
   },
   {
-    "name": "C++",
-    "icon": "/c++_icon.png"
-  },
-  {
-    "name": "C#",
-    "icon": "/csharp_icon.png"
-  },
-  {
     "name": "TypeScript",
     "icon": "/typescript_icon.png"
   },
@@ -30,6 +22,14 @@
   {
     "name": "NextJs",
     "icon": "/next_icon.png"
+  },
+  {
+    "name": "C++",
+    "icon": "/c++_icon.png"
+  },
+  {
+    "name": "C#",
+    "icon": "/csharp_icon.png"
   },
   {
      "name": "Firebase",
